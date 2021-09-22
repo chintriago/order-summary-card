@@ -1,3 +1,4 @@
+/* GENERAL */
 html,
 body {
     background-color: hsl(225, 100%, 94%);
@@ -21,6 +22,7 @@ body {
     box-sizing: inherit;
 }
 
+/* CARD */
 .card-container {
     position: absolute;
     top: 50%;
@@ -81,6 +83,7 @@ body {
     right: 30px;
 }
 
+.pricing-container a:hover,
 .pricing-container a:active {
     color: hsl(251, 55%, 62%);
 }
@@ -109,6 +112,7 @@ span {
     width: 80%;
 }
 
+.pay-btn:hover,
 .pay-btn:active {
     background-color: hsl(251, 55%, 62%);
 }
@@ -121,10 +125,12 @@ span {
     text-decoration: none;
 }
 
+.cancel-link:hover,
 .cancel-link:active {
     color: hsl(223, 47%, 23%);
 }
 
+/* MEDIA QUERIES */
 @media only screen and (max-width: 425px) {
     .card-container {
         width: 90vw;
