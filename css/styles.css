@@ -167,14 +167,17 @@ footer a {
     color: hsl(228, 45%, 44%);
 }
 /* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
     body {
         background-image: url(../images/pattern-background-mobile.svg);
     }
 
     .card-container {
         width: 90vw;
-        height: 80vh;
+    }
+
+    .card {
+        margin: 1.5em 0;
     }
 
     .upper-text {
