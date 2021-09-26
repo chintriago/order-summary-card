@@ -1,25 +1,47 @@
-/* GENERAL */
-html,
+/* GENERAL/RESET */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
 body {
     background-color: hsl(225, 100%, 94%);
     background-image: url(images/pattern-background-desktop.svg);
     background-position: 50% 25%;
     background-repeat: no-repeat;
     background-size: cover;
-    box-sizing: border-box;
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 16px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* CARD */
@@ -130,8 +152,32 @@ span {
     color: hsl(223, 47%, 23%);
 }
 
+/* FOOTER */
+.footer-bottom-position {
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    margin: 2.5em auto;
+    padding: 0 0.5em;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
 /* MEDIA QUERIES */
 @media only screen and (max-width: 425px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .card-container {
         width: 90vw;
         height: 80vh;
