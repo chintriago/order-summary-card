@@ -1,16 +1,19 @@
 /* GENERAL/RESET */
 html {
+    height: 100%;
     box-sizing: border-box;
     font-size: 16px;
     font-family: "Red Hat Display", sans-serif;
 }
 
 body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: hsl(225, 100%, 94%);
-    background-image: url(images/pattern-background-desktop.svg);
-    background-position: 50% 25%;
+    background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 *,
@@ -46,11 +49,7 @@ img {
 
 /* CARD */
 .card-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     width: 425px;
     height: 650px;
 }
@@ -158,13 +157,10 @@ span {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    width: 100vw;
     font-size: 11px;
     text-align: center;
-    margin: 2.5em auto;
-    padding: 0 0.5em;
+    padding: 2em;
 }
 
 footer a {
@@ -173,9 +169,7 @@ footer a {
 /* MEDIA QUERIES */
 @media only screen and (max-width: 425px) {
     body {
-        background-image: url(images/pattern-background-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url(../images/pattern-background-mobile.svg);
     }
 
     .card-container {
